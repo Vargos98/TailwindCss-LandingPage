@@ -5,11 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
-  <div class="main w-full h-screen bg-zinc-200 ">
-    <div class="container mx-auto">
-      hey
+  <div class="main w-full h-screen bg-zinc-100 ">
+    <div class="container mx-auto h-screen relative">
+      <div class="navbar w-full px-5 py-3 flex items-center        justify-between font-['system-ui'] font-semibold lg:text-xl ">
+        <h3>Vargos.Dev</h3>
+        <div class=" hidden md:flex links gap-2">
+          <a class="text-xs px-5 " href="#">About me</a>
+          <a class="text-xs opacity-50 px-5" href="#">Services</a>
+          <a class="text-xs opacity-50 px-5 " href="#">Projects</a>
+          <a class="text-xs opacity-50  px-5" href="#">Contact me</a>
+        </div>
+        <i class="ri-menu-2-line md:hidden"></i>
+      </div>
+
+      <div class=" absolute top-1/2 left-1/2 w-full flex flex-col 
+      -translate-x-[50%] -translate-y-[50%] items-center ">
+        <div class=" image w-24 h-24 lg: w-32 h-32 rounded-full">
+          <img class="w-full h-full  object-cover rounded-full" 
+          src="./profile.png" alt="profile">
+        </div>
+        <h3 class="font-semibold mt-4 text-xl lg:text-2xl tracking-tighter ">Hi, I'm Umesh👋</h3>
+        <h1 class="text-4xl lg:text-5xl font-semibold text-center leading-none mt-3 px-3 w-3/4 tracking-tighter font-['system-ui']">Building digital products, brands, and experiences.</h1>
+        <p class="w-3/4 text-center mt-6 tracking-tighter text-sm lg:text-lg opacity-70">
+          A <strong class="font-semibold">Web developer</strong> and <strong class="font-semibold">Visual Developer</strong> is India.
+          I specialize in Frontend Development, Responsive Web Design, 
+          and Visual Development.
+        </p>
+
+        <button class="px-4 py-2 lg:px-6 py-3 bg-black text-white mt-20 rounded-full font-semibold lg:font-medium text-xs lg:text-base tracking-tight">Connect with me</button>
+      </div>
       
     </div>
   </div>
